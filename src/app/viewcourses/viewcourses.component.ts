@@ -14,12 +14,13 @@ this.fetchData()
 
 
 
-
+status:boolean=false
 
    fetchData=()=>{
     this.myapi.viewcourse().subscribe(
       (data)=>{
         this.courseData=data
+        this.status=true
       }
     )
    }
